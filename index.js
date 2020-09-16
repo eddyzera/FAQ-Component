@@ -5,7 +5,6 @@ function openAndCloseFAQ() {
     document.querySelectorAll('.accordion-title').forEach(divItem => {
         divItem.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log()
             let childElement = divItem.nextElementSibling;
             divItem.classList.toggle('active')
             if (childElement.style.maxHeight) {
