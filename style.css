@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap);
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.container {
+    width: 50%;
+    margin: 10% auto;
+}
+
+div.accordion {
+    margin-bottom: 12px;
+}
+
+div div.accordion-title {
+    background-color: #FFF;
+    cursor: pointer;
+    padding: 4px 26px;
+    width: 100%;
+    color: #0000006b;
+    border: 1px solid #0a0a0a21;
+    border-radius: 12px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 4px;
+}
+
+div div.red:hover {
+    background-color: #ff0b48e3;
+    color: #FFF;
+}
+
+div div.purple:hover {
+    background-color: #650696e3;
+    color: #FFF;
+}
+
+div div.green:hover {
+    background-color: #239606e3;
+    color: #FFF;
+}
+
+div div.red:hover::after {
+    color: #FFF;
+}
+
+div div.green:hover::after {
+    color: #FFF;
+}
+
+div div.purple:hover::after {
+    color: #FFF;
+}
+
+div div.accordion-title:after {
+    content: '\002B';
+    color: #00000038;
+    font-weight: bold;
+    float: right;
+    margin-top: -42px;
+    margin-left: 5px;
+}
+
+div div.accordion-title h2 {
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div div.content {
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 25px;
+    background-color: #f9f9f9;
+    color: #a5a3a3;
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.active:after {
+    content: "\2212" !important;
+}
+
+.click-red {
+    background-color: #ff0b48e3 !important;
+    color: #ffffff !important;
+}
+
+.click-red:after {
+    color: #FFF !important;
+}
+
+.click-green {
+    background-color: #239606e3 !important;
+    color: #ffffff !important;
+}
+
+.click-green:after {
+    color: #FFF !important;
+}
+
+.click-purple {
+    background-color: #650696e3 !important;
+    color: #ffffff !important;
+}
+
+.click-purple:after {
+    color: #FFF !important;
+}
+
